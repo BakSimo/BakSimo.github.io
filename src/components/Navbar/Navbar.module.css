@@ -1,0 +1,20 @@
+.nav{
+    grid-area: n;
+    background-color: rgb(255, 190, 0);
+    padding: 5px;
+}
+
+.item a{
+    margin: 10px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover{
+    color: rgb(240, 164, 0);
+}
+
+.item .active{
+    color: #fff;
+}
