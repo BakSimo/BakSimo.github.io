@@ -2,17 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import state from './redux/state';
+import { addPost } from './redux/state';
 import reportWebVitals from './reportWebVitals';
-
-let posts = [
-  { id: 1, message: "Hello World!", likeCount: 17 },
-  { id: 2, message: "Hi, how are you!", likeCount: 32 },
-];
-
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App posts={posts}/>
+    <App state={state}/>
   </React.StrictMode>
 );
 

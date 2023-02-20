@@ -1,0 +1,38 @@
+let state = {
+    profilePage: {
+        posts: [
+            { id: 1, message: "Hello World!", likeCount: 17 },
+            { id: 2, message: "Hi, how are you!", likeCount: 32 },
+        ],
+    },
+
+    dialogsPage: {
+        dialogs: [
+            { id: 1, name: "Jack" },
+            { id: 2, name: "John" },
+            { id: 3, name: "Max" },
+            { id: 4, name: "Katy" },
+            { id: 5, name: "Alex" },
+        ],
+
+        messages: [
+            { id: 1, message: "Hello World!" },
+            { id: 2, message: "Hi!" },
+            { id: 3, message: "Hi guys" },
+            { id: 4, message: "Wats up!" },
+            { id: 5, message: "Created by Ko" },
+        ]
+    }
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 3,
+        message: postMessage,
+        likeCount: 0
+    }
+
+    state.profilePage.posts.push(newPost);
+}
+
+export default state;
