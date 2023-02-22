@@ -16,7 +16,7 @@ const Message = (props) => {
 };
 
 const Dialogs = (props) => {
-  let dialogsElements = props.dialogs.map((d) => (
+  let dialogsElements = props.state.map((d) => (
     <DialogItem name={d.name} id={d.id} />
   ));
 
