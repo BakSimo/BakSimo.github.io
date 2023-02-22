@@ -6,9 +6,12 @@
 
   grid-template-columns: 1fr 10fr;
   grid-template-rows: 60px 1fr;
-  grid-gap: .5rem;
 
   margin: 0 100px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  box-shadow: 15px 12px 25px -3px rgba(243, 81, 17, 0.3);
 }
 
 .app-wrapper-content{

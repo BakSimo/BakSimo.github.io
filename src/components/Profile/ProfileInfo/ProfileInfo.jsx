@@ -10,7 +10,7 @@ const ProfileInfo = (props) => {
           alt=""
         />
       </div>
-      <div className={c.descriptionBlock}>description</div>
+      <div className={c.descriptionBlock}>Description</div>
     </div>
   );
 };
