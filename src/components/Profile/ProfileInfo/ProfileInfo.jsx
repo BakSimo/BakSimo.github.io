@@ -6,7 +6,7 @@ const ProfileInfo = (props) => {
     <div className={c.profileInfo}>
       <div className={c.userAvatar}>
         <img
-          src="https://www.pngitem.com/pimgs/m/41-414928_face-head-line-art-clip-and-white-symbol.png"
+          src="https://yt3.ggpht.com/ytc/AKedOLSKTvT_HQKHg7lSWAWU-dOMYhpZ2xYRSffu8H3X6w=s900-c-k-c0x00ffffff-no-rj"
           alt=""
         />
       </div>

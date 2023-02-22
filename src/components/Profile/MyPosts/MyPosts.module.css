@@ -2,6 +2,32 @@
     padding: 10px;
 }
 
+.postsBlock textarea{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    resize: none
+    ;
+}
+
+.postsBlock textarea::placeholder{
+    color: rgb(240, 164, 0);
+}
+
+.postsBlock button{
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color:  rgb(240, 164, 0);
+}
+
+.postsBlock button:hover {
+    background-color:  rgb(187, 128, 1);
+}
+
 .posts{
     margin-top: 10px;
 }

@@ -11,7 +11,6 @@ const MyPosts = (props) => {
 
   let addPost = () => {
     props.addPost();
-    props.updateNewPostText("");
   };
 
   let onPostChange = () => {
@@ -28,6 +27,7 @@ const MyPosts = (props) => {
             ref={newPostElement}
             onChange={onPostChange}
             value={props.newPostText}
+            placeholder="Enter your text"
           />
         </div>
         <div>
