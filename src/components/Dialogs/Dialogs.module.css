@@ -9,16 +9,17 @@
  }
 
  .dialog a{
-    color: black;
+    color: #61876E;
     text-decoration: none;
  }
 
  .dialog a:hover{
-    color: rgb(240, 164, 0);
+    color: #A3BB98;
 }
 
  .messages{
     margin: 5px;
     padding: 5px 23px;
-    border-left: solid 1px black;
+    border-left: solid 1px #61876E;
+    color: #61876E;
  }

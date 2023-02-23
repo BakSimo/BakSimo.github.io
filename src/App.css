@@ -1,3 +1,14 @@
+*{
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .app-wrapper {
   display: grid;
   grid-template-areas:
@@ -9,13 +20,15 @@
 
   margin: 0 100px;
   border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   overflow: hidden;
 
-  box-shadow: 11px 11px 25px -3px rgba(243, 81, 17, 0.3);
+  box-shadow: 11px 11px 25px -3px #f0eccfbd;
 }
 
 .app-wrapper-content{
   padding: 10px;
   grid-area: p;
-  background-color: rgb(255, 203, 160);
+  background-color: #F0ECCF;
 }

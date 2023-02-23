@@ -1,6 +1,6 @@
 import React from "react";
 import c from "./Header.module.css";
-import logo from "../../img/ko-web-site-logo.jpeg"
+import logo from "../../img/ko-web-site-logo.png"
 
 const Header = (props) => {
   return (

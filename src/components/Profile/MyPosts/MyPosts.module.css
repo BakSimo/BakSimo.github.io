@@ -1,19 +1,38 @@
 .postsBlock{
     padding: 10px;
+    color: #3C6255;
+}
+
+.postsBlock h3{
+    font-size: 22px;
 }
 
 .postsBlock textarea{
     padding: 10px;
     border: none;
     background-color: transparent;
-    color: white;
+    color: #a3bb98;
     outline: none;
-    resize: none
-    ;
+    resize: none;
+}
+
+.postsBlock textarea::-webkit-scrollbar{
+    width: 0.5em;
+
+}
+
+.postsBlock textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #A3BB98;
+}
+
+.postsBlock textarea::-webkit-scrollbar-thumb {
+    background-color: #61876E;
+    outline: none;
 }
 
 .postsBlock textarea::placeholder{
-    color: rgb(240, 164, 0);
+    color: #61876e52;
+    font-size: 13px;
 }
 
 .postsBlock button{
@@ -21,11 +40,12 @@
     border: none;
     border-radius: 6px;
     color: #fff;
-    background-color:  rgb(240, 164, 0);
+    background-color:  #61876E;
+    cursor: pointer;
 }
 
 .postsBlock button:hover {
-    background-color:  rgb(187, 128, 1);
+    background-color:  #A3BB98;
 }
 
 .posts{

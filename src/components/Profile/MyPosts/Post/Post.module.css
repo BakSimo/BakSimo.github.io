@@ -1,11 +1,15 @@
 .item{
-    margin-bottom: 13px;
+    margin: 15px 10px 24px 0;
+}
+
+.item span{
+    color: #A3BB98;
 }
 
 .itemInfo{
     display: flex;
     align-items: center;
-    color: #642e0e;
+    color: #A3BB98;
 }
 
 .itemInfo img{

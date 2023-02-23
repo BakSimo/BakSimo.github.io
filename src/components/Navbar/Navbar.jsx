@@ -10,7 +10,7 @@ const Navbar = (props) => {
           to="/profile"
           className={(navData) => (navData.isActive ? c.active : c.item)}
         >
-          Main
+          Profile
         </NavLink>
       </div>
       <div className={c.item}>
@@ -23,10 +23,10 @@ const Navbar = (props) => {
       </div>
       <div className={c.item}>
         <NavLink
-          to="/options"
+          to="/settings"
           className={(navData) => (navData.isActive ? c.active : c.item)}
         >
-          Options
+          Settings
         </NavLink>
       </div>
     </div>

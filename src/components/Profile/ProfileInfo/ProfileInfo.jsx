@@ -6,11 +6,11 @@ const ProfileInfo = (props) => {
     <div className={c.profileInfo}>
       <div className={c.userAvatar}>
         <img
-          src="https://yt3.ggpht.com/ytc/AKedOLSKTvT_HQKHg7lSWAWU-dOMYhpZ2xYRSffu8H3X6w=s900-c-k-c0x00ffffff-no-rj"
+          src="https://media.istockphoto.com/id/885237786/vector/female-avatar-profile-picture-gold-member-silhouette-light-shadow.jpg?s=170667a&w=0&k=20&c=mNLeA175yOCz0ro9c0x3nkmwcWOF_l9o6dLv5mWO2wQ="
           alt=""
         />
       </div>
-      <div className={c.descriptionBlock}>Description</div>
+      <div className={c.descriptionBlock}></div>
     </div>
   );
 };

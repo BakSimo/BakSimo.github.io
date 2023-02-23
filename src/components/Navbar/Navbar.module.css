@@ -1,20 +1,19 @@
 .nav{
     grid-area: n;
-    background-color: rgb(252, 202, 55);
+    background-color: #FBC252;
     padding: 5px;
 }
 
 .item a{
     margin: 10px;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
+    color: #C58940;
 }
 
 .item a:hover{
-    color: rgb(240, 164, 0);
+    color: #FAEAB1;
 }
 
 .item .active{
     color: #fff;
+    /* border-bottom: 1px solid #fff; */
 }
