@@ -1,5 +1,6 @@
-const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
+import sidebarReducer from "./sidebar-reducer";
 
 let store = {
     _state: {
@@ -10,7 +11,6 @@ let store = {
             ],
             newPostText: "",
         },
-    
         dialogsPage: {
             dialogs: [
                 { id: 1, name: "Jack" },
@@ -20,49 +20,31 @@ let store = {
                 { id: 5, name: "Alex" },
             ],
     
-            messages: [
+            messages: [ 
                 { id: 1, message: "Hello World!" },
                 { id: 2, message: "Hi!" },
                 { id: 3, message: "Hi guys" },
                 { id: 4, message: "Wats up!" },
                 { id: 5, message: "Created by Ko" },
-            ]
-        }
+            ],
+
+            newMessageBody: ""
+        },
+        sidebar: {}
     },
     _callSubscriber(){},
-    _addPost(){
-        let newPost = {
-            id: 3,
-            message: this._state.profilePage.newPostText,
-            likeCount: 0
-        }
-        
-        this._state.profilePage.posts.push(newPost);
-        this._state.profilePage.newPostText = "";
-        this._callSubscriber(this._state); 
-    },
-    _updateNewPostText(newText){
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state); 
-    },
     getState(){
         return this._state;
     },
     subscribe(observer){this._callSubscriber = observer;},
     dispatch(action){
-        if (action.type === "ADD-POST") {
-            this._addPost();     
-        }
-        else if(action.type === "UPDATE-NEW-POST-TEXT"){
-            this._updateNewPostText(action.newText);
-        }
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action);
+
+        this._callSubscriber(this._state);
     }  
 }
-
-export const addPostAC = () => ({type: ADD_POST }); 
-export  const updateNewPostTextAC = (text) => { 
-    return { type: UPDATE_NEW_POST_TEXT, newText: text,};
-};
 
 export default store;
 window.store = store;

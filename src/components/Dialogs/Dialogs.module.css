@@ -1,25 +1,64 @@
- .dialogs{
-    display: grid;
-    grid-template-columns: 3fr 10fr;
- }
-
- .dialogsItems{
-    margin: 5px;
-    padding: 5px;
- }
-
- .dialog a{
-    color: #61876E;
-    text-decoration: none;
- }
-
- .dialog a:hover{
-    color: #A3BB98;
+.dialogs{
+   display: grid;
+   grid-template-columns: 3fr 10fr;
 }
 
- .messages{
-    margin: 5px;
-    padding: 5px 23px;
-    border-left: solid 1px #61876E;
-    color: #61876E;
+.dialogsItems{
+   min-width: 30%;
+   margin: 5px;
+   padding: 5px;
+}
+
+.dialog{
+   word-wrap: break-word;
+}
+
+.dialog a{
+   color: #61876E;
+   text-decoration: none;
+}
+
+.dialog a:hover{
+   color: #A3BB98;
+}
+
+.messages{
+   min-width: 70%;
+   margin: 5px;
+   padding: 5px 23px;
+   border-left: solid 1px #61876E;
+   color: #A3BB98;
+   /* height: calc(100% - 160px); */
  }
+
+ .messages button{
+   padding: 7px;
+   border: none;
+   border-radius: 6px;
+   color: #fff;
+   background-color:  #61876E;
+   cursor: pointer;
+ }
+
+.input{
+   height: 50px;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+ .messages .input input{
+   width: 100%;
+   border: none;
+   outline: none;
+   color: #a3bb98;
+   padding: 10px;
+}
+
+.messages .input input::placeholder{
+   color: #61876e52;
+   font-size: 13px;
+}
