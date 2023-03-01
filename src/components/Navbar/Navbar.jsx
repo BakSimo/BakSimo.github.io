@@ -7,6 +7,14 @@ const Navbar = (props) => {
     <div className={c.nav}>
       <div className={c.item}>
         <NavLink
+          to=""
+          className={(navData) => (navData.isActive ? c.active : c.item)}
+        >
+          Main
+        </NavLink>
+      </div>
+      <div className={c.item}>
+        <NavLink
           to="/profile"
           className={(navData) => (navData.isActive ? c.active : c.item)}
         >

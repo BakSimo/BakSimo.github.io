@@ -1,0 +1,15 @@
+.mainBlock{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainBlock p{
+    font-size: 54px;
+    color: #3C6255;
+}
+
+.mainBlock p:last-child{
+    font-size: 34px;
+}

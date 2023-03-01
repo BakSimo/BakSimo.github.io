@@ -11,7 +11,7 @@ const ProfileInfo = (props) => {
       <div className={c.userInfo}>
         <div className={c.userFirstName}>First name: git</div>
         <div className={c.userLastName}>Last name: Ko</div>
-        <div className={c.serBournDate}>Bourn date: 01.03.2005</div>
+        <div className={c.serBournDate}>Date of birth: 01.03.2005</div>
         <div className={c.userPostsCount}>Posts count: 4</div>
       </div>
       {/* <div className={c.descriptionBlock}></div> */}
