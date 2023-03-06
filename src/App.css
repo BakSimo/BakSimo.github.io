@@ -34,7 +34,7 @@ body{
 }
 
 .app-wrapper-content{
-
+  max-height: 100%;
   padding: 10px;
   grid-area: p;
   background-color: #F0ECCF;

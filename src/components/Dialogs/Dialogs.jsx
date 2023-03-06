@@ -28,7 +28,7 @@ const Dialogs = (props) => {
     <div className={c.dialogs}>
       <div className={c.dialogsItems}>{dialogsElements}</div>
       <div className={c.messages}>
-        <div>{messagesElements}</div>
+        <div className={c.messagesItems}>{messagesElements}</div>
         <div className={c.input}>
           <input
             value={newMessageBody}

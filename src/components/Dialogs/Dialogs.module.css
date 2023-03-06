@@ -1,4 +1,5 @@
 .dialogs{
+   min-height: 100%;
    display: grid;
    grid-template-columns: 3fr 10fr;
 }
@@ -9,8 +10,16 @@
    padding: 5px;
 }
 
+.dialogsItems img{
+   width: 50px;
+   margin: 10px 10px 0 0;
+   border-radius: 50%;
+}
+
 .dialog{
-   word-wrap: break-word;
+   display: flex;
+   align-items: center;
+   margin: 10px;
 }
 
 .dialog a{
@@ -20,6 +29,15 @@
 
 .dialog a:hover{
    color: #A3BB98;
+}
+
+.messagesItems{
+   min-height: 90%;
+}
+
+.messagesItems .dialog{
+   margin: 15px;
+   padding: 0 10px;
 }
 
 .messages{

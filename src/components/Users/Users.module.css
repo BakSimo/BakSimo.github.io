@@ -1,0 +1,8 @@
+.userPhoto{
+    width: 100px;
+}
+
+.userPhoto img{
+    width: 100%;
+    border-radius: 50%;
+}
