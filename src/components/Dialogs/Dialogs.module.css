@@ -58,6 +58,10 @@
    cursor: pointer;
  }
 
+.messages button:hover {
+   background-color:  #A3BB98;
+}
+
 .input{
    height: 50px;
    padding: 10px;

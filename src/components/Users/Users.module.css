@@ -1,8 +1,36 @@
+.users{
+    color: #3C6255;
+}
+
 .userPhoto{
     width: 100px;
+    margin-right: 15px;
 }
 
 .userPhoto img{
     width: 100%;
     border-radius: 50%;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+    margin: 15px 5px;
+}
+
+.userPublicInfo div{
+    margin: 5px;
+}
+
+.followButton button{
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color:  #61876E;
+    cursor: pointer;
+}
+
+.followButton button:hover {
+    background-color:  #A3BB98;
 }
