@@ -18,8 +18,16 @@
     margin: 15px 5px;
 }
 
+.pages{
+    color: #A3BB98;
+}
+
 .userPublicInfo div{
     margin: 5px;
+}
+
+.selectedPage{
+    color: #61876E;
 }
 
 .followButton button{
