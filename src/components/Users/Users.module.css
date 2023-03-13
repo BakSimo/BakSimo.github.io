@@ -22,6 +22,14 @@
     color: #A3BB98;
 }
 
+.pages span{
+    margin: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .userPublicInfo div{
     margin: 5px;
 }
