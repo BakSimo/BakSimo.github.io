@@ -10,6 +10,9 @@
 .userPhoto img{
     width: 100%;
     border-radius: 50%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .userInfo{
@@ -58,6 +61,9 @@
     color: #fff;
     background-color:  #61876E;
     cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .followButton button:hover {

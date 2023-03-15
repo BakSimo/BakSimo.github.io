@@ -1,13 +1,15 @@
 import React from "react";
+import Preloader from "../../common/Preloader/Preloader";
 import c from "./ProfileInfo.module.css";
 
 const ProfileInfo = (props) => {
+  if (!props.profile) {
+    return <Preloader />;
+  }  
+//  60 60 60 60 60 60  60 60 60 60 60 60  60 60 
   return (
     <div className={c.profileInfo}>
-      <img
-        src="https://media.istockphoto.com/id/885237786/vector/female-avatar-profile-picture-gold-member-silhouette-light-shadow.jpg?s=170667a&w=0&k=20&c=mNLeA175yOCz0ro9c0x3nkmwcWOF_l9o6dLv5mWO2wQ="
-        alt=""
-      />
+      <img src={props.profile.photos.large} alt="" />
       <div className={c.userInfo}>
         <div className={c.userFirstName}>First name: git</div>
         <div className={c.userLastName}>Last name: Ko</div>
