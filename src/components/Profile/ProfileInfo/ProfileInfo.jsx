@@ -5,8 +5,8 @@ import c from "./ProfileInfo.module.css";
 const ProfileInfo = (props) => {
   if (!props.profile) {
     return <Preloader />;
-  }  
-//  60 60 60 60 60 60  60 60 60 60 60 60  60 60 
+  }
+
   return (
     <div className={c.profileInfo}>
       <img src={props.profile.photos.large} alt="" />

@@ -14,3 +14,17 @@
     object-fit: cover;
     background-color: #f7e018
 }
+
+.loginBlock{
+    margin-left: auto;
+    margin-right: 50px;
+    color: #ffffff;
+}
+
+.loginBlock a{
+    color: #C58940;
+}
+
+.loginBlock a:hover{
+    color: #FAEAB1;
+}
